@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>แบบทดสอบ</h1>
+
+        <div id="question1">
+            <p id="questionText1">PIM ย่อมาจากอะไร?</p>
+            <button class="button" onclick="checkAnswer('a', 1)">A) พีไอเอ็ม</button><br>
+            <button class="button" onclick="checkAnswer('b', 1)">B) ปิ๋ม</button><br>
+            <button class="button" onclick="checkAnswer('c', 1)">C) พิม</button><br>
+            <button class="button" onclick="checkAnswer('d', 1)">D) ภีม</button>
+            <p id="resultAnswer1"></p>
+        </div>
+
+        <div id="question2" style="display: none;">
+            <p id="questionText2">NPRU ย่อมาจากอะไร?</p>
+            <button class="button" onclick="checkAnswer('a', 2)">A) Nakhon and Pathom Rajabhat University</button><br>
+            <button class="button" onclick="checkAnswer('b', 2)">B) Nakhon Pathom Rajabhat University</button><br>
+            <button class="button" onclick="checkAnswer('c', 2)">C) Nakhon and Pathom Rajabhat Universal</button><br>
+            <button class="button" onclick="checkAnswer('d', 2)">D) Nakhon Pathom Rajabhat Universal</button>
+            <p id="resultAnswer2"></p>
+        </div>
+
+        <div id="result" style="display: none;">
+            <p id="score"></p>
+            <button class="button" onclick="reloadQuiz()">ทำข้อสอบอีกครั้ง</button>
+        </div>
+
+    </div>
+   
+    <script src="quiz.js" charset="UTF-8"></script>
+</body>
+</html>
